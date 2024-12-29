@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies Search App</title>
+  <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+  <header class="topnav">
+    <a class="active" href="#">Movies Finder</a>
+    <div class="search-container">
+      <form id="form">
+        <input type="search" id="query" name="q" placeholder="Search movies...">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="feedback" style="display: none;"></section>
+    <section id="movies" class="movies-grid"></section>
+    <button id="load-more" style="display: none;">Load More</button>
+  </main>
+
+  <script src="movies.js"></script>
+</body>
+</html>
